@@ -286,16 +286,33 @@
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-file-document-outline"></i>
+                                <i class="mdi mdi-certificate"></i>
                                 <span>Truck Permit</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li class="d-none"><a href="permits-all.html">All Permits</a></li>
+                                <li class=""><a href="permits-active.html">Active Permits</a></li>
                                 <li>
                                     <a href="permits-almost.html">Nearing expiry</a>
                                 </li>
                                 <li><a href="permits-exp.html">Expired Permits</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="bx bx-receipt"></i>
+                                <span>Invoices</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="invoice-new.html">Create an Invoice</a></li>
+                                <li><a href="invoice.html">Permit & Maintenance invoices</a></li>
+                                <li><a href="invoice-other.html">Other Invoices</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="receipts.html" class="waves-effect">
+                                <i class="mdi mdi-receipt"></i><span>Receipts</span>
+                            </a>
                         </li>
 
                         <li>
@@ -827,14 +844,14 @@
                                                     <div class="col-lg-4 col-md-6">
                                                         <div class="mb-4">
                                                             <label for="basicpill-lastname-input">Payment Option<strong class="text-danger">*</strong></label>
-                                                            <select class="form-control selectpicker" data-live-search="true" title="Select payment option">
-                                                            <option value="MPESA">MPESA</option>
-                                                            <option value="CASH">Cash</option> 
-                                                            <option value="Print Invoice">Print Invoice</option>                                                                
-                                                      </select>
+                                                            <select class="form-control selectpicker payment-options" data-live-search="true" title="Select payment option">
+                                                                    <option value="MPESA" data-content="<span class='badge pill bg-success fs-6'>MPESA</span>">MPESA</option>
+                                                                    <option value="CASH" data-content="<span class='badge pill bg-primary fs-6'>CASH</span>">CASH</option> 
+                                                                    <option value="Print Invoice" data-content="<span class='badge pill bg-warning fs-6'>CASH</span>">PRINT INVOICE</option>                                                              
+                                                            </select>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4 col-md-6">
+                                                    <div class="col-lg-4 col-md-6 mpesa-phone d-none">
                                                         <div class="mb-4">
                                                             <label for="basicpill-firstname-input">Phone. <strong class="text-danger">*</strong></label>
                                                             <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Enter Phone No.">
@@ -843,7 +860,27 @@
                                                     <div class="col-lg-4 col-md-6">
                                                         <div class="mb-4">
                                                             <label for="basicpill-firstname-input">Amount<strong class="text-danger">*</strong></label>
-                                                            <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Amount to be Paid">
+                                                            <input value="36000" readonly type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Amount to be Paid">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-4 d-none cash-alert">
+                                                                <div class="alert alert-secondary" role="alert">
+                                                                    By selecting this option it means you confirmed that you have received <strong>KES 36,000</strong> and a receipt will be produced for the same.
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4 d-none mpesa-alert">
+                                                                <div class="alert alert-success" role="alert">
+                                                                    By selecting this option a payment request for <strong>KES 36,000</strong> Will be sent to the customer and a receipt will be produced once the payment has been successfully done.
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-4 d-none invoice-alert">
+                                                                <div class="alert alert-warning" role="alert">
+                                                                    An invoice for <strong>KES 36,000</strong> will be created and the client is free to make the payment on later date through <strong class="fw-semibold">Mpesa,Bank or cash.</strong>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

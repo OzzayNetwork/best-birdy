@@ -285,16 +285,33 @@
                         </li>
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-file-document-outline"></i>
+                                <i class="mdi mdi-certificate"></i>
                                 <span>Truck Permit</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li class="d-none"><a href="permits-all.html">All Permits</a></li>
+                                <li class=""><a href="permits-active.html">Active Permits</a></li>
                                 <li>
                                     <a href="permits-almost.html">Nearing expiry</a>
                                 </li>
                                 <li><a href="permits-exp.html">Expired Permits</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="bx bx-receipt"></i>
+                                <span>Invoices</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="invoice-new.html">Create an Invoice</a></li>
+                                <li><a href="invoice.html">Permit & Maintenance invoices</a></li>
+                                <li><a href="invoice-other.html">Other Invoices</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="receipts.html" class="waves-effect">
+                                <i class="mdi mdi-receipt"></i><span>Receipts</span>
+                            </a>
                         </li>
 
                         <li>
@@ -501,12 +518,13 @@
                                                             </a>
 
                                                             <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                                <a class="dropdown-item" href="truck-details.html"><i class="font-size-15 mdi mdi-truck-delivery me-3"></i>Track Details</a>
+                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Current Permit</a>
+                                                                <a class="dropdown-item" href="truck-permit-history.html"><i class="font-size-15 mdi mdi-history me-3"></i>Permits History</a>
+                                                                <a class="dropdown-item" href="truck-new-permit.html"><i class="font-size-15  mdi mdi-file-plus me-3"></i>New Permit</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Owner</a>
+                                                                <a class="dropdown-item text-capitalize" href="truck-edit.html"><i class="font-size-15 mdi  mdi-playlist-edit me-3"></i>Update truck details</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#" data-bs-toggle="modal" data-bs-target=".remove-modal"><i class="font-size-15  mdi  mdi-cancel me-3 text-danger "></i>Remove Truck</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -553,12 +571,13 @@
                                                             </a>
 
                                                             <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                                <a class="dropdown-item" href="truck-details.html"><i class="font-size-15 mdi mdi-truck-delivery me-3"></i>Track Details</a>
+                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Current Permit</a>
+                                                                <a class="dropdown-item" href="truck-permit-history.html"><i class="font-size-15 mdi mdi-history me-3"></i>Permits History</a>
+                                                                <a class="dropdown-item" href="truck-new-permit.html"><i class="font-size-15  mdi mdi-file-plus me-3"></i>New Permit</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Owner</a>
+                                                                <a class="dropdown-item text-capitalize" href="truck-edit.html"><i class="font-size-15 mdi  mdi-playlist-edit me-3"></i>Update truck details</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#" data-bs-toggle="modal" data-bs-target=".remove-modal"><i class="font-size-15  mdi  mdi-cancel me-3 text-danger "></i>Remove Truck</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -605,12 +624,13 @@
                                                             </a>
 
                                                             <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                                <a class="dropdown-item" href="truck-details.html"><i class="font-size-15 mdi mdi-truck-delivery me-3"></i>Track Details</a>
+                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Current Permit</a>
+                                                                <a class="dropdown-item" href="truck-permit-history.html"><i class="font-size-15 mdi mdi-history me-3"></i>Permits History</a>
+                                                                <a class="dropdown-item" href="truck-new-permit.html"><i class="font-size-15  mdi mdi-file-plus me-3"></i>New Permit</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Owner</a>
+                                                                <a class="dropdown-item text-capitalize" href="truck-edit.html"><i class="font-size-15 mdi  mdi-playlist-edit me-3"></i>Update truck details</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#" data-bs-toggle="modal" data-bs-target=".remove-modal"><i class="font-size-15  mdi  mdi-cancel me-3 text-danger "></i>Remove Truck</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -657,12 +677,13 @@
                                                             </a>
 
                                                             <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                                <a class="dropdown-item" href="member-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Detailed view</a>
-                                                                <a class="dropdown-item" href="members-new.html"><i class="font-size-15 mdi mdi-account-edit me-3"></i>Edit</a>
-                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-account-arrow-right me-3"></i>Receipt payment</a>
-                                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target=".statements-modal"><i class="font-size-15  mdi mdi-printer me-3"></i>Member Statements</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Member</a>
-                                                                <a class="dropdown-item text-capitalize" data-bs-toggle="modal" data-bs-target=".distress-modal" href="#"><i class="font-size-15 mdi  mdi-cancel me-3 text-danger"></i>Initiate distress</a>
+                                                                <a class="dropdown-item" href="truck-details.html"><i class="font-size-15 mdi mdi-truck-delivery me-3"></i>Track Details</a>
+                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Current Permit</a>
+                                                                <a class="dropdown-item" href="truck-permit-history.html"><i class="font-size-15 mdi mdi-history me-3"></i>Permits History</a>
+                                                                <a class="dropdown-item" href="truck-new-permit.html"><i class="font-size-15  mdi mdi-file-plus me-3"></i>New Permit</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Owner</a>
+                                                                <a class="dropdown-item text-capitalize" href="truck-edit.html"><i class="font-size-15 mdi  mdi-playlist-edit me-3"></i>Update truck details</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#" data-bs-toggle="modal" data-bs-target=".remove-modal"><i class="font-size-15  mdi  mdi-cancel me-3 text-danger "></i>Remove Truck</a>
                                                             </div>
                                                         </div>
                                                     </td>

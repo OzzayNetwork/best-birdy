@@ -306,6 +306,27 @@ $(window).on('load', function() {
             $('.phone-num').addClass('d-none');
         }
     });
+
+    $('.payment-options').on('changed.bs.select', function(e, clickedIndex, isSelected, previousValue) {
+        var theOption = $(this).val()
+        if (theOption == "MPESA") {
+            $('.mpesa-phone').removeClass('d-none');
+            $('.mpesa-alert').removeClass('d-none').siblings().addClass('d-none');
+
+        }
+
+        if (theOption == "CASH") {
+            $('.mpesa-phone').addClass('d-none')
+            $('.cash-alert').removeClass('d-none').siblings().addClass('d-none');
+
+        }
+        if (theOption == "Print Invoice") {
+            $('.mpesa-phone').addClass('d-none')
+            $('.invoice-alert').removeClass('d-none').siblings().addClass('d-none');
+
+        }
+
+    });
     $('.payment-method').on('changed.bs.select', function(e, clickedIndex, isSelected, previousValue) {
         if (clickedIndex == 1) {
             $('.phone-num').removeClass('d-none');
