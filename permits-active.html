@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Best Birdy | Registered trucks</title>
+    <title>Best Birdy | Active Truck Permits</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Keep your finances and membership up to date" name="description" />
     <meta content="Kelvin Njuguna Ndungu" name="author" />
@@ -381,12 +381,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">All Trucks</h4>
+                                <h4 class="mb-sm-0 font-size-18">Active ermits</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Analytics</a></li>
-                                        <li class="breadcrumb-item active">All Trucks</li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Permits</a></li>
+                                        <li class="breadcrumb-item active">Active Permits</li>
                                     </ol>
                                 </div>
 
@@ -419,8 +420,8 @@
                                         </div>
 
                                         <div class="d-flex">
-                                            <a href="truck-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector">
-                                                <i class="mdi  mdi-plus  font-size-16"></i> <span class="pl-1 d-md-inline">Add A Truck</span>
+                                            <a href="permit-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector">
+                                                <i class="mdi  mdi-plus  font-size-16"></i> <span class="pl-1 d-md-inline">Add A Permit</span>
                                             </a>
 
                                         </div>
@@ -432,7 +433,7 @@
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table align-middle table-nowrap table-hover dt-responsive contacts-table" id="datatable-buttons">
-                                            <thead class="table-dark">
+                                            <thead class="table-dark text-capitalize">
                                                 <tr>
 
                                                     <th scope="col" style="width:70px">
@@ -442,14 +443,13 @@
 
                                                         </div>
                                                     </th>
-                                                    <th scope="col">Plate Num</th>
+                                                    <th scope="col">Permit No.</th>
+                                                    <th scope="col">Truck</th>
                                                     <th scope="col">Owner</th>
-                                                    <th scope="col">Driver</th>
-                                                    <th scope="col">License No.</th>
-                                                    <th scope="col">License Status</th>
+                                                    <th scope="col">Start Date</th>
                                                     <th scope="col">Due Date</th>
+                                                    <th scope="col">Date added</th>
                                                     <th scope="col">Days to expiry</th>
-                                                    <th scope="col" class="text-right">Penalties</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -458,21 +458,10 @@
                                                     <td>
 
                                                     </td>
-                                                    <td class="text-capitalize" colspan="">22 Trucks</td>
-                                                    <td class="text-capitalize" colspan="">22 Owners</td>
-                                                    <td class="text-capitalize" colspan="">13 Drivers</td>
-                                                    <td>12 licenses</td>
-                                                    <td class="" colspan="2">
-                                                        4 Inactive
-                                                    </td>
+                                                    <td class="text-capitalize" colspan="2">22 Permits</td>
+                                                    <td class="text-capitalize" colspan="6">22 Owners</td>
 
-                                                    <td class="text-black text-uppercase text-right" colspan="2">
-                                                        <span class="text-danger fw-semibold">KES 19,000</span>
-                                                    </td>
 
-                                                    <td>
-
-                                                    </td>
                                                 </tr>
                                             </tfoot>
                                             <tbody>
@@ -487,30 +476,27 @@
                                                     </td>
 
                                                     <td class="text-capitalize">
-                                                        <a href="truck-details.html">KAG 678U</a>
+                                                        <a href="truck-permit.html" target="new">123476</a>
+                                                    </td>
+
+                                                    <td class="text-uppercase">
+                                                        <a href="driver-details.html" title="View Details">KAG 125P</a>
                                                     </td>
                                                     <td class="text-capitalize">
                                                         <a href="member-details.html" title="View Details">Kelvin Njuguna</a>
                                                     </td>
-                                                    <td class="text-capitalize">
-                                                        <a href="driver-details.html" title="View Details">Cathrine Mugo</a>
-                                                    </td>
                                                     <td>
-                                                        <a href="license-details.html" title="View Details">67Y TYHK00</a>
+                                                        10 Mar 2022
                                                     </td>
                                                     <td class="text-capitalize">
-                                                        <span class="badge badge-soft-success font-size-11 m-1 text-uppercase">Active</span>
+                                                        11 Aug 2022
                                                     </td>
                                                     <td class="text-capitalize">
-                                                        2 Aug 2022
+                                                        20 Mar 2022
                                                     </td>
                                                     <td class="text-capitalize">
                                                         98 Days
                                                     </td>
-                                                    <td class="text-black text-uppercase text-right">
-                                                        <span class="text-danger fw-semibold">KES 1,000</span>
-                                                    </td>
-
                                                     <td>
                                                         <div class="dropdown">
                                                             <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
@@ -518,13 +504,11 @@
                                                             </a>
 
                                                             <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                                <a class="dropdown-item" href="truck-details.html"><i class="font-size-15 mdi mdi-truck-delivery me-3"></i>Track Details</a>
-                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Current Permit</a>
-                                                                <a class="dropdown-item" href="truck-permit-history.html"><i class="font-size-15 mdi mdi-history me-3"></i>Permits History</a>
-                                                                <a class="dropdown-item" href="truck-new-permit.html"><i class="font-size-15  mdi mdi-file-plus me-3"></i>New Permit</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Owner</a>
-                                                                <a class="dropdown-item text-capitalize" href="truck-edit.html"><i class="font-size-15 mdi  mdi-playlist-edit me-3"></i>Update truck details</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#" data-bs-toggle="modal" data-bs-target=".remove-modal"><i class="font-size-15  mdi  mdi-cancel me-3 text-danger "></i>Remove Truck</a>
+                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-download me-3"></i>Download Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15  mdi mdi-email-send me-3"></i>Send Permit on Mail</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Send Permit as SMS</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -540,30 +524,27 @@
                                                     </td>
 
                                                     <td class="text-capitalize">
-                                                        <a href="truck-details.html">KDS 567Y</a>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        <a href="member-details.html" title="View Details">Martin Luchetu</a>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        <a href="driver-details.html" title="View Details">Ndereba Mkuu</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="license-details.html" title="View Details">HDT789</a>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        <span class="badge badge-soft-success font-size-11 m-1 text-uppercase">Active</span>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        3 Jul 2022
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        12 Days
-                                                    </td>
-                                                    <td class="text-black text-uppercase text-right">
-                                                        <span class="text-info fw-semibold">KES 0.00</span>
+                                                        <a href="truck-permit.html" target="new">123476</a>
                                                     </td>
 
+                                                    <td class="text-uppercase">
+                                                        <a href="driver-details.html" title="View Details">KAG 125P</a>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        <a href="member-details.html" title="View Details">Kelvin Njuguna</a>
+                                                    </td>
+                                                    <td>
+                                                        10 Mar 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        11 Aug 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        20 Mar 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        98 Days
+                                                    </td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
@@ -571,13 +552,11 @@
                                                             </a>
 
                                                             <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                                <a class="dropdown-item" href="truck-details.html"><i class="font-size-15 mdi mdi-truck-delivery me-3"></i>Track Details</a>
-                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Current Permit</a>
-                                                                <a class="dropdown-item" href="truck-permit-history.html"><i class="font-size-15 mdi mdi-history me-3"></i>Permits History</a>
-                                                                <a class="dropdown-item" href="truck-new-permit.html"><i class="font-size-15  mdi mdi-file-plus me-3"></i>New Permit</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Owner</a>
-                                                                <a class="dropdown-item text-capitalize" href="truck-edit.html"><i class="font-size-15 mdi  mdi-playlist-edit me-3"></i>Update truck details</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#" data-bs-toggle="modal" data-bs-target=".remove-modal"><i class="font-size-15  mdi  mdi-cancel me-3 text-danger "></i>Remove Truck</a>
+                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-download me-3"></i>Download Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15  mdi mdi-email-send me-3"></i>Send Permit on Mail</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Send Permit as SMS</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -593,30 +572,27 @@
                                                     </td>
 
                                                     <td class="text-capitalize">
-                                                        <a href="truck-details.html">KDF 154P</a>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        <a href="member-details.html" title="View Details">Ashley Watkins</a>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        <a href="driver-details.html" title="View Details">Kelvin Mutoko</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="license-details.html" title="View Details">23568</a>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        <span class="badge badge-soft-success font-size-11 m-1 text-uppercase">Active</span>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        14 Jun 2022
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        23 Days
-                                                    </td>
-                                                    <td class="text-black text-uppercase text-right">
-                                                        <span class="text-info fw-semibold">KES 0.00</span>
+                                                        <a href="truck-permit.html" target="new">123476</a>
                                                     </td>
 
+                                                    <td class="text-uppercase">
+                                                        <a href="driver-details.html" title="View Details">KAG 125P</a>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        <a href="member-details.html" title="View Details">Kelvin Njuguna</a>
+                                                    </td>
+                                                    <td>
+                                                        10 Mar 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        11 Aug 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        20 Mar 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        98 Days
+                                                    </td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
@@ -624,13 +600,11 @@
                                                             </a>
 
                                                             <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                                <a class="dropdown-item" href="truck-details.html"><i class="font-size-15 mdi mdi-truck-delivery me-3"></i>Track Details</a>
-                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Current Permit</a>
-                                                                <a class="dropdown-item" href="truck-permit-history.html"><i class="font-size-15 mdi mdi-history me-3"></i>Permits History</a>
-                                                                <a class="dropdown-item" href="truck-new-permit.html"><i class="font-size-15  mdi mdi-file-plus me-3"></i>New Permit</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Owner</a>
-                                                                <a class="dropdown-item text-capitalize" href="truck-edit.html"><i class="font-size-15 mdi  mdi-playlist-edit me-3"></i>Update truck details</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#" data-bs-toggle="modal" data-bs-target=".remove-modal"><i class="font-size-15  mdi  mdi-cancel me-3 text-danger "></i>Remove Truck</a>
+                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-download me-3"></i>Download Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15  mdi mdi-email-send me-3"></i>Send Permit on Mail</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Send Permit as SMS</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -646,30 +620,27 @@
                                                     </td>
 
                                                     <td class="text-capitalize">
-                                                        <a href="truck-details.html">KAG 678U</a>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        <a href="member-details.html" title="View Details">Flex Oduor</a>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        <a href="driver-details.html" title="View Details">Don Robbie</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="license-details.html" title="View Details">12356</a>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        <span class="badge badge-soft-success font-size-11 m-1 text-uppercase">Active</span>
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        13Sep 2022
-                                                    </td>
-                                                    <td class="text-capitalize">
-                                                        103 Days
-                                                    </td>
-                                                    <td class="text-black text-uppercase text-right">
-                                                        <span class="text-danger fw-semibold">KES 500</span>
+                                                        <a href="truck-permit.html" target="new">123476</a>
                                                     </td>
 
+                                                    <td class="text-uppercase">
+                                                        <a href="driver-details.html" title="View Details">KAG 125P</a>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        <a href="member-details.html" title="View Details">Kelvin Njuguna</a>
+                                                    </td>
+                                                    <td>
+                                                        10 Mar 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        11 Aug 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        20 Mar 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        98 Days
+                                                    </td>
                                                     <td>
                                                         <div class="dropdown">
                                                             <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
@@ -677,17 +648,64 @@
                                                             </a>
 
                                                             <div class="dropdown-menu dropdown-menu-end text-capitalize">
-                                                                <a class="dropdown-item" href="truck-details.html"><i class="font-size-15 mdi mdi-truck-delivery me-3"></i>Track Details</a>
-                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Current Permit</a>
-                                                                <a class="dropdown-item" href="truck-permit-history.html"><i class="font-size-15 mdi mdi-history me-3"></i>Permits History</a>
-                                                                <a class="dropdown-item" href="truck-new-permit.html"><i class="font-size-15  mdi mdi-file-plus me-3"></i>New Permit</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Message Owner</a>
-                                                                <a class="dropdown-item text-capitalize" href="truck-edit.html"><i class="font-size-15 mdi  mdi-playlist-edit me-3"></i>Update truck details</a>
-                                                                <a class="dropdown-item write-msg-btn" href="#" data-bs-toggle="modal" data-bs-target=".remove-modal"><i class="font-size-15  mdi  mdi-cancel me-3 text-danger "></i>Remove Truck</a>
+                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-download me-3"></i>Download Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15  mdi mdi-email-send me-3"></i>Send Permit on Mail</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Send Permit as SMS</a>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex  align-items-center">
+                                                            <div class="the-mail-checkbox pr-4">
+                                                                <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
+                                                            </div>
+
+                                                        </div>
+                                                    </td>
+
+                                                    <td class="text-capitalize">
+                                                        <a href="truck-permit.html" target="new">123476</a>
+                                                    </td>
+
+                                                    <td class="text-uppercase">
+                                                        <a href="driver-details.html" title="View Details">KAG 125P</a>
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        <a href="member-details.html" title="View Details">Kelvin Njuguna</a>
+                                                    </td>
+                                                    <td>
+                                                        10 Mar 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        11 Aug 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        20 Mar 2022
+                                                    </td>
+                                                    <td class="text-capitalize">
+                                                        98 Days
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+
+                                                            <div class="dropdown-menu dropdown-menu-end text-capitalize">
+                                                                <a class="dropdown-item" href="truck-permit.html"><i class="font-size-15 mdi mdi-certificate me-3"></i>View Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-download me-3"></i>Download Permit</a>
+                                                                <a class="dropdown-item" href="#"><i class="font-size-15  mdi mdi-email-send me-3"></i>Send Permit on Mail</a>
+                                                                <a class="dropdown-item write-msg-btn" href="#"><i class="font-size-15  mdi mdi-chat me-3 "></i>Send Permit as SMS</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
