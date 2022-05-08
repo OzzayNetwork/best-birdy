@@ -55,7 +55,7 @@ var walletOptions = {
     },
     stroke: { lineCap: "round" },
     colors: ["#556ee6", "#e83e8c", "#00a884"],
-    labels: ["SMSs", "Emails", "WhatsApp"],
+    labels: ["Permits", "Maintenance", "Penalties"],
     legend: { show: !1 }
 };
 (chart = new ApexCharts(document.querySelector("#sent-bundles"), walletOptions)).render();
@@ -101,18 +101,18 @@ var options = {
 
             },
             title: {
-                text: "Messages Sent",
+                text: "Amount Collections in KES",
             }
         },
         series: [{
-                name: "SMS",
+                name: "Permits",
                 data: [4023658, 5123456, 41458975, 67123654, 22123654, 43789654, 36789623, 52320365, 24023147, 18012586, 36036985, 48025820]
             }, {
-                name: "Emails",
+                name: "Maintenance",
                 data: [13025856, 23025632, 20032145, 8021457, 13032568, 27456987, 18235897, 22235789, 10213214, 16365478, 24456987, 22123568]
             },
             {
-                name: "WhatsApp",
+                name: "Penalties",
                 data: [1325856, 2325632, 2032145, 802147, 1303268, 27456987, 1823897, 2223789, 1013214, 1636478, 2445987, 2213568]
             }
         ],
@@ -201,7 +201,52 @@ var options = {
 
                 }
             }
+        },
+        tooltip: {
+            enabled: true,
+            enabledOnSeries: undefined,
+            shared: true,
+            followCursor: false,
+            intersect: false,
+            inverseOrder: false,
+            custom: undefined,
+            fillSeriesColor: false,
+            theme: false,
+            style: {
+                fontSize: '12px',
+                fontFamily: undefined
+
+            },
+            fillSeriesColor: false,
+            theme: "light",
+
+            marker: {
+                show: true,
+            },
+            onDatasetHover: {
+                highlightDataSeries: true,
+            },
+            // custom: function({ series, seriesIndex, dataPointIndex, w }) {
+            //     let currentTotal = 0
+            //     series.forEach((s) => {
+            //         currentTotal += s[dataPointIndex]
+            //     })
+            //     return '<div class="custom-tooltip">' +
+            //         '<span><b>Total: </b>' + currentTotal + '</span>' +
+            //         '</div>'
+            // },
+            y: {
+                formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
+                    let currentTotal = 0
+                    series.forEach((s) => {
+                        currentTotal += s[dataPointIndex]
+                    })
+                    return "<span class='text-right w-100 d-flex' > KES " + numeral(value).format('0,0') + "</span> "
+
+                }
+            }
         }
+
 
 
     },
