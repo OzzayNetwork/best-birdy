@@ -396,22 +396,13 @@
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                         <h4 class="card-title text-capitalize mb-0 ">
-                                            All rent and Bills invoices
+                                            Permit and Maintenance invoices
                                         </h4>
 
                                         <div class="d-flex">
-                                            <a href="invoice-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector me-3">
+                                            <a href="invoice-new.html" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="mdi mdi-plus-circle-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Create an invoice</span>
                                             </a>
-                                            <select class="form-control selectpicker w-auto  show-tick" data-style="btn btn-primary waves-light waves-effect month-picker font-size-16" data-live-search="true" title="Select premises">
-                                                <option value="" selected>All Premises</option>
-                                                <option value="">Savannah Lands</option>
-                                                <option value="">Stone Plaza</option>
-                                                <option value="">Brook House</option>
-                                                <option value="">Airtel</option>
-                                                <option value="">Union Towers</option>
-                                                <option value="">The standard</option>
-                                          </select>
 
                                         </div>
 
@@ -435,13 +426,12 @@
 
                                                         </div>
                                                     </th>
-                                                    <th scope="col">Acc NO.</th>
-                                                    <th scope="col">Tenant</th>
-                                                    <th scope="col">Premises</th>
-                                                    <th scope="col">Hse/Unit</th>
-                                                    <th scope="col">Months In arrears</th>
-                                                    <th scope="col" class="text-nowrap">Created By</th>
-                                                    <th scope="col" class="text-right">Total Balance</th>
+                                                    <th scope="col">Membership NO.</th>
+                                                    <th scope="col">Member</th>
+                                                    <th scope="col">Truck(s)</th>
+                                                    <th scope="col" class="text-right">Monthly Payable</th>
+                                                    <th scope="col" class="text-right">Amount Paid</th>
+                                                    <th scope="col" class="text-right">Reducing Bal.</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
@@ -458,24 +448,21 @@
                                                     </td>
                                                     <td class="text-capitalize text-nowrap">123-410</td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Byron Otieno</a></p>
+                                                        <p class="mb-0"><a href="member-details.html" title="View Details">Byron Njuguna</a></p>
                                                     </td>
                                                     <td>
-                                                        <a href="property-details.html">Lions</a>
+                                                        <a href="truck-details.html">KBG 123T</a>
                                                     </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">401</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        1
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Stanishes Muguche
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 2,000</span>
                                                     </td>
 
                                                     <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 22,500</span>
+                                                        <span class="fw-semibold text-info">KES 1,500</span>
+                                                    </td>
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold text-danger">KES 500</span>
                                                     </td>
 
                                                     <td>
@@ -497,6 +484,7 @@
                                                         </div>
                                                     </td>
                                                 </tr>
+
                                                 <tr>
 
                                                     <td>
@@ -507,26 +495,23 @@
 
                                                         </div>
                                                     </td>
-                                                    <td class="text-capitalize text-nowrap">120-402</td>
+                                                    <td class="text-capitalize text-nowrap">123-410</td>
                                                     <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Samantha Ngare</a></p>
+                                                        <p class="mb-0"><a href="member-details.html" title="View Details">Gedion Gitau</a></p>
                                                     </td>
                                                     <td>
-                                                        <a href="property-details.html">Rocks</a>
+                                                        <a href="#">3 Trucks</a>
                                                     </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">402</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        1
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Dancan Kamau
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold ">KES 2,000</span>
                                                     </td>
 
                                                     <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 26,000</span>
+                                                        <span class="fw-semibold text-info">KES 1,500</span>
+                                                    </td>
+
+                                                    <td class="text-nowrap text-right ">
+                                                        <span class="fw-semibold text-danger">KES 500</span>
                                                     </td>
 
                                                     <td>
@@ -548,414 +533,7 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                                <tr>
 
-                                                    <td>
-                                                        <div class="d-flex  align-items-center">
-                                                            <div class="the-mail-checkbox pr-4">
-                                                                <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                            </div>
-
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">121-403</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Anthony Maloba</a></p>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-details.html">Adams</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">403</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        2
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Newtone Maloba
-                                                    </td>
-
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 60,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Receive Payment</button>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <div class="d-flex  align-items-center">
-                                                            <div class="the-mail-checkbox pr-4">
-                                                                <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                            </div>
-
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">123-404</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Grace Nekesa</a></p>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-details.html">Ngara</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">404</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        1
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Naomi Tarangei
-                                                    </td>
-
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 21,500</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Receive Payment</button>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <div class="d-flex  align-items-center">
-                                                            <div class="the-mail-checkbox pr-4">
-                                                                <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                            </div>
-
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">122-405</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Angela Obotu</a></p>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-details.html">Donholm</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">405</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        4
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Jackline Wandenga
-                                                    </td>
-
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 60,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Receive Payment</button>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <div class="d-flex  align-items-center">
-                                                            <div class="the-mail-checkbox pr-4">
-                                                                <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                            </div>
-
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">125-406</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Ernest Njuguna</a></p>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-details.html">Airtel</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">406</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        2
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Patrick Baraka
-                                                    </td>
-
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 30,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Receive Payment</button>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <div class="d-flex  align-items-center">
-                                                            <div class="the-mail-checkbox pr-4">
-                                                                <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                            </div>
-
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">124-407</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Ann Njoroge</a></p>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-details.html">Aquiners</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">407</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        4
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Jacky Mariba
-                                                    </td>
-
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 50,400</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Receive Payment</button>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <div class="d-flex  align-items-center">
-                                                            <div class="the-mail-checkbox pr-4">
-                                                                <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                            </div>
-
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">122-408</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Faith Awiti</a></p>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-details.html">TulipHouse</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">408</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        1
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Stanley Kinuthia
-                                                    </td>
-
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 25,200</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Receive Payment</button>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <div class="d-flex  align-items-center">
-                                                            <div class="the-mail-checkbox pr-4">
-                                                                <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                            </div>
-
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">120-409</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Mary Kimani</a></p>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-details.html">Ngara</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">409</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        1
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Lemmy Mureithi
-                                                    </td>
-
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 23,500</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Receive Payment</button>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <div class="d-flex  align-items-center">
-                                                            <div class="the-mail-checkbox pr-4">
-                                                                <input class="form-check-input mt-0 pt-0 form-check-dark" type="checkbox" id="formCheck1">
-                                                            </div>
-
-                                                        </div>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap">121-410</td>
-                                                    <td class="text-capitalize text-nowrap">
-                                                        <p class="mb-0"><a href="tenant-details.html" title="View Details">Martin Karanja</a></p>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-details.html">Kagundo</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="property-unit-details.html">410</a>
-                                                    </td>
-                                                    <td class="text-capitalize text-nowrap ">
-                                                        2
-                                                    </td>
-
-                                                    <td class="text-capitalize ">
-                                                        Josephilis Onyango
-                                                    </td>
-
-                                                    <td class="text-nowrap text-right ">
-                                                        <span class="fw-semibold ">KES 20,000</span>
-                                                    </td>
-
-                                                    <td>
-                                                        <div class="d-flex justify-content-end">
-                                                            <button type="button" class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3" data-bs-toggle="modal" data-bs-target=".receipting-modal">Receive Payment</button>
-                                                            <div class="dropdown">
-                                                                <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                                                </a>
-
-                                                                <div class="dropdown-menu dropdown-menu-end ">
-                                                                    <a class="dropdown-item " data-bs-toggle="modal" data-bs-target=".receipting-modal" href="# "><i class="font-size-15 mdi mdi-eye me-3 "></i>View</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-printer me-3 "></i>Print</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-email me-3 "></i>Email Tenant</a>
-                                                                    <a class="dropdown-item " href="# "><i class="font-size-15 mdi mdi-chat me-3 "></i>Send as SMS</a>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
@@ -963,12 +541,19 @@
                                                     <td>
 
                                                     </td>
-                                                    <th class="text-capitalize text-nowrap" colspan="3">23 Invoies</th>
+                                                    <th class="text-capitalize text-nowrap" colspan="2">23 Members</th>
 
-                                                    <th class="text-nowrap">63 Units</th>
+                                                    <th class="text-nowrap">63 Trucks</th>
 
-                                                    <td class="text-nowrap text-right " colspan="3">
-                                                        <span class="fw-semibold ">KES 25,500</span>
+                                                    <td class="text-nowrap text-right " colspan="">
+                                                        <span class="fw-semibold ">KES 3,000,000</span>
+                                                    </td>
+
+                                                    <td class="text-nowrap text-right " colspan="">
+                                                        <span class="fw-semibold ">KES 2,000,000</span>
+                                                    </td>
+                                                    <td class="text-nowrap text-right " colspan="">
+                                                        <span class="fw-semibold text-danger">KES 1,000,000</span>
                                                     </td>
 
                                                     <td>
@@ -1003,9 +588,9 @@
                             <div class="col-12">
                                 <address>
                                     <strong>Billed To:</strong><br>
-                                    Kelvin Njuguna<br>
+                                    Byron Njuguna<br>
                                     email@mail.com, 0704 549 859<br>                                   
-                                    Hse No. 410, 90 Degrees By Tsavo
+                                    Member No. 423-410.
                                     <br><br>
                                     1 Mar 2022, 10:20 AM
                                 </address>
@@ -1021,52 +606,34 @@
                                         <thead>
                                             <tr>
                                                 <th style="width: 70px;">No.</th>
-                                                <th>Item</th>
+                                                <th>Truck</th>
+                                                <th>Invoice Item</th>
                                                 <th>Months</th>
                                                 <th class="text-end">Amount</th>
-                                                <th class="" style="width: 150px;">Assign Amount</th>
+                                                <th class="text-end">Paid</th>
+                                                <th class="text-end">Bal.</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>01</td>
-                                                <td>Monthly Rent</td>
+                                                <td>KBG 123P</td>
+                                                <td>Truck Permit</td>
                                                 <td>1</td>
-                                                <td class="text-end">KES 24,500</td>
-                                                <td>
-                                                    <input type="number" class="form-control form-control-sm text-right" placeholder="KES">
-                                                </td>
+                                                <td class="text-end">KES 2,000</td>
+                                                <td class="text-end">KES 750</td>
+                                                <td class="text-end fw-bold">KES 250</td>
                                             </tr>
-
                                             <tr>
                                                 <td>02</td>
-                                                <td>Water Bills</td>
-                                                <td>2</td>
-                                                <td class="text-end">KES 12,000</td>
-                                                <td>
-                                                    <input type="number" class="form-control form-control-sm text-right" placeholder="KES">
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>03</td>
-                                                <td>Electricity</td>
-                                                <td>3</td>
-                                                <td class="text-end">KES 200</td>
-                                                <td>
-                                                    <input type="number" class="form-control form-control-sm text-right" placeholder="KES">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>04</td>
-
-                                                <td>Visitation Fees</td>
+                                                <td>KBG 123P</td>
+                                                <td>Maintenance</td>
                                                 <td>1</td>
-                                                <td class="text-end">KES 250</td>
-                                                <td>
-                                                    <input type="number" class="form-control form-control-sm text-right" placeholder="KES">
-                                                </td>
+                                                <td class="text-end">KES 2,000</td>
+                                                <td class="text-end">KES 750</td>
+                                                <td class="text-end fw-bold">KES 250</td>
                                             </tr>
+
                                             <tr>
                                                 <td colspan="3" class="text-end">Total</td>
                                                 <td class="text-end fw-bold">KES 36,950</td>
