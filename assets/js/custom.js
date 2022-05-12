@@ -541,5 +541,11 @@ $(window).on('load', function() {
     }
 
 
+
+    //alert("done");
+});
+
+$(document).ready(function() {
     $('.selectpicker').selectpicker();
+    $('.selectpicker').selectpicker('render')
 });
