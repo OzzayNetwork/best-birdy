@@ -1,6 +1,6 @@
 //Bundle usage summary
 var walletOptions = {
-    series: [76, 67, 61],
+    series: [76, 67, 61, 20],
     chart: { height: 362, type: "radialBar" },
     plotOptions: {
         radialBar: {
@@ -54,8 +54,8 @@ var walletOptions = {
         }
     },
     stroke: { lineCap: "round" },
-    colors: ["#556ee6", "#e83e8c", "#00a884"],
-    labels: ["Permits", "Maintenance", "Penalties"],
+    colors: ["#556ee6", "#e83e8c", "#00a884", "#424242"],
+    labels: ["Permits", "Maintenance", "Penalties", "TAK", ],
     legend: { show: !1 }
 };
 (chart = new ApexCharts(document.querySelector("#sent-bundles"), walletOptions)).render();
@@ -77,7 +77,7 @@ var options = {
         plotOptions: {
             bar: {
                 horizontal: !1,
-                columnWidth: "45%",
+                columnWidth: "60%",
                 // endingShape: "rounded"
             }
         },
@@ -114,12 +114,16 @@ var options = {
             {
                 name: "Penalties",
                 data: [1325856, 2325632, 2032145, 802147, 1303268, 27456987, 1823897, 2223789, 1013214, 1636478, 2445987, 2213568]
+            },
+            {
+                name: "TAK",
+                data: [23568, 20000, 25000, 69000, 12360, 78950, 42500, 20000, 85290, 96305, 85000, 25000]
             }
         ],
         xaxis: {
             categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         },
-        colors: ["#556ee6", "#e83e8c", "#00a884"],
+        colors: ["#556ee6", "#e83e8c", "#00a884", "#424242"],
         legend: {
             position: "bottom"
         },
