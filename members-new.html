@@ -399,496 +399,540 @@
                     <!-- end page title -->
 
                     <!-- eTransactions table -->
+                    
 
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-body">
                                     <p>Fill in the form correctly. Fields with an Asterisk <strong class="text-danger">*</strong> are mandatory fields.</p>
-                                    <div id="basic-example">
+                                    <div id="kev-step-form">
                                         <!-- <div id=""> -->
+                                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                            
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                <ul class="navbar-nav mr-auto">
+                                                <li class="nav-item active">
+                                                    <a class="nav-link active" href="#">1. Member Details <span class="sr-only">(current)</span></a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">2. Next of Kin</a>
+                                                </li>
+                            
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">3. Truck Registration</a>
+                                                </li>
+                            
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">4. Payments & Confirmation</a>
+                                                </li>
+                                                
+                                                </ul>
+                                            
+                                            </div>
+                                        </nav>
+                                        
 
                                         <!-- Property details -->
-                                        <h3>Member Details</h3>
-                                        <section>
-                                            <form>
-                                                <!-- Tenant type selection -->
+                                        <div class="step-cont active-step">
+                                            <h3>Member Details</h3>
+                                            <section>
+                                                <form>
+                                                    <!-- Tenant type selection -->
 
-                                                <div class="row tenant-indidual-type">
-                                                    <div class="col-lg-4 col-md-6">
-                                                        <div class="mb-4">
-                                                            <label for="basicpill-firstname-input">First name <strong class="text-danger">*</strong></label>
-                                                            <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter Your First Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6">
-                                                        <div class="mb-4">
-                                                            <label for="basicpill-lastname-input">Last Name <strong class="text-danger">*</strong></label>
-                                                            <input type="text" class="form-control" id="basicpill-lastname-input" placeholder="Enter Your Last Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6">
-                                                        <div class="mb-4">
-                                                            <label for="">Other Name(s)</label>
-                                                            <input type="text" class="form-control" id="" placeholder="Enter Your Last Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="row">
-                                                            <div class="col-lg-4 col-md-6">
-                                                                <div class="mb-4">
-                                                                    <label for="basicpill-firstname-input">ID Num/ PPT Num<strong class="text-danger">*</strong></label>
-                                                                    <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter Your First Name">
-                                                                </div>
+                                                    <div class="row tenant-indidual-type">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">First name <strong class="text-danger">*</strong></label>
+                                                                <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter Your First Name">
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4 col-sm-12">
-                                                                <div class="mb-4">
-                                                                    <label for="" class="">Date of Registration<strong class="text-danger">*</strong></label>
-                                                                    <div class="input-group" id="datepicker1">
-                                                                        <input type="text" class="form-control mouse-pointer" placeholder="Select Date" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker1' data-provide="datepicker" data-date-autoclose="true">
-
-                                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-lastname-input">Last Name <strong class="text-danger">*</strong></label>
+                                                                <input type="text" class="form-control" id="basicpill-lastname-input" placeholder="Enter Your Last Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="">Other Name(s)</label>
+                                                                <input type="text" class="form-control" id="" placeholder="Enter Your Last Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6">
+                                                                    <div class="mb-4">
+                                                                        <label for="basicpill-firstname-input">ID Num/ PPT Num<strong class="text-danger">*</strong></label>
+                                                                        <input type="text" class="form-control" id="basicpill-firstname-input" placeholder="Enter Your First Name">
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-4">
-                                                                <div class="row">
-                                                                    <label for="" class="">Gender: <strong class="text-danger">*</strong></label>
-                                                                    <div class="d-flex">
-                                                                        <div class="form-check mb-3 pr-15px">
-                                                                            <input class="form-check-input" type="radio" name="gender" id="formRadios1" checked>
-                                                                            <label class="form-check-label" for="formRadios1">
-                                                                                Male
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="form-check">
-                                                                            <input class="form-check-input" type="radio" name="gender" id="formRadios2">
-                                                                            <label class="form-check-label" for="formRadios2">
-                                                                                Female
-                                                                            </label>
+                                                                <div class="col-md-6 col-lg-4 col-sm-12">
+                                                                    <div class="mb-4">
+                                                                        <label for="" class="">Date of Registration<strong class="text-danger">*</strong></label>
+                                                                        <div class="input-group" id="datepicker1">
+                                                                            <input type="text" class="form-control mouse-pointer" placeholder="Select Date" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker1' data-provide="datepicker" data-date-autoclose="true">
+
+                                                                            <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-4">
+                                                                    <div class="row">
+                                                                        <label for="" class="">Gender: <strong class="text-danger">*</strong></label>
+                                                                        <div class="d-flex">
+                                                                            <div class="form-check mb-3 pr-15px">
+                                                                                <input class="form-check-input" type="radio" name="gender" id="formRadios1" checked>
+                                                                                <label class="form-check-label" for="formRadios1">
+                                                                                    Male
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="radio" name="gender" id="formRadios2">
+                                                                                <label class="form-check-label" for="formRadios2">
+                                                                                    Female
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="col-lg-4 col-md-6">
-                                                        <div class="mb-4">
-                                                            <label for="basicpill-lastname-input">Nationality <strong class="text-danger">*</strong></label>
-                                                            <select class="form-control selectpicker" data-live-search="true" title="Select nationality">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-lastname-input">Nationality <strong class="text-danger">*</strong></label>
+                                                                <select class="form-control selectpicker" data-live-search="true" title="Select nationality">
+                                                                    
+                                                                    <option value="" selected>Kenya</option>
+                                                                    <option value="">Brazil</option>
+                                                                    <option value="">South Africa</option>                                                                
+                                                            </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-lastname-input">Marital Status <strong class="text-danger">*</strong></label>
+                                                                <select class="form-control selectpicker" data-live-search="true" title="Select Marital status">
                                                                 
-                                                                <option value="" selected>Kenya</option>
-                                                                <option value="">Brazil</option>
-                                                                <option value="">South Africa</option>                                                                
-                                                          </select>
+                                                                    <option value="">Single</option>
+                                                                    <option value="">Married</option>                                                                
+                                                            </select>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6">
-                                                        <div class="mb-4">
-                                                            <label for="basicpill-lastname-input">Marital Status <strong class="text-danger">*</strong></label>
-                                                            <select class="form-control selectpicker" data-live-search="true" title="Select Marital status">
-                                                               
-                                                                <option value="">Single</option>
-                                                                <option value="">Married</option>                                                                
-                                                          </select>
-                                                        </div>
-                                                    </div>
 
-                                                    <div class="col-lg-4 col-md-6">
-                                                        <div class="mb-4">
-                                                            <label for="basicpill-firstname-input">Email. <strong class="text-danger">*</strong></label>
-                                                            <input type="email" class="form-control" id="Enter tenants email address" placeholder="Enter property plot No.">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Email. <strong class="text-danger">*</strong></label>
+                                                                <input type="email" class="form-control" id="Enter tenants email address" placeholder="Enter property plot No.">
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6">
-                                                        <div class="mb-4">
-                                                            <label for="basicpill-firstname-input">Phone. <strong class="text-danger">*</strong></label>
-                                                            <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Enter Phone No.">
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Phone. <strong class="text-danger">*</strong></label>
+                                                                <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Enter Phone No.">
+                                                            </div>
                                                         </div>
+
+
+
                                                     </div>
 
-
-
-                                                </div>
-
-                                            </form>
-                                        </section>
+                                                </form>
+                                            </section>
+                                        </div>
                                         <!-- next of kin and dependents -->
-                                        <h3>Next Of Kin</h3>
-                                        <section>
-                                            <form>
-                                                <div class="row">
+                                        <div class="step-cont d-none">
+                                            <h3>Next Of Kin</h3>
+                                            <section>
+                                                <form>
+                                                    <div class="row">
 
-                                                    <div class="col-12">
-                                                        <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                            <p class="fw-semibold mb-0 pb-0">Next of Kin Details</p>
+                                                        <div class="col-12">
+                                                            <div class="bg-primary border-2 bg-soft p-3 mb-4">
+                                                                <p class="fw-semibold mb-0 pb-0">Next of Kin Details</p>
 
+                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="table-responsive table-responsive-md mb-4">
-                                                        <table class="table table-editable-3 align-middle table-edits">
-                                                            <thead class="table-light">
-                                                                <tr class="text-uppercase table-dark">
-                                                                    <th>#</th>
-                                                                    <th>First name</th>
-                                                                    <th class="">Middle name</th>
-                                                                    <th class="">other names</th>
-                                                                    <th class="">Relationship</th>
-                                                                    <th></th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr data-id="1">
-                                                                    <td style="width: 80px">1.</td>
-                                                                    <td>
-                                                                        <input type="text " class="form-control " placeholder="Enter First name" spellcheck="false" data-ms-editor="true">
-                                                                    </td>
-                                                                    <td class="">
-                                                                        <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                    </td>
-                                                                    <td class="">
-                                                                        <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                    </td>
-                                                                    <td>
-                                                                        <select class="form-control selectpicker" data-live-search="true" title="Select Relationship">
-                                                                            <option value="">Father</option>
-                                                                            <option value="">Mother</option>   
-                                                                            <option value="">Sister</option>                                                                
-                                                                    </select>
-                                                                    </td>
-                                                                    <td></td>
-
-                                                                </tr>
-
-                                                                <tr class="cloneCharges d-none">
-                                                                    <td style="width: 80px " class="categoryIndex ">#</td>
-
-                                                                    <td>
-                                                                        <input type="text " class="form-control " placeholder="Enter First name" spellcheck="false" data-ms-editor="true">
-                                                                    </td>
-                                                                    <td class="">
-                                                                        <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                    </td>
-                                                                    <td class="">
-                                                                        <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
-                                                                    </td>
-                                                                    <td>
-                                                                        <select class="form-control selectpicker" data-live-search="true" title="Select Relationship">
+                                                        <div class="table-responsive table-responsive-md mb-4">
+                                                            <table class="table table-editable-3 align-middle table-edits">
+                                                                <thead class="table-light">
+                                                                    <tr class="text-uppercase table-dark">
+                                                                        <th>#</th>
+                                                                        <th>First name</th>
+                                                                        <th class="">Middle name</th>
+                                                                        <th class="">other names</th>
+                                                                        <th class="">Relationship</th>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr data-id="1">
+                                                                        <td style="width: 80px">1.</td>
+                                                                        <td>
+                                                                            <input type="text " class="form-control " placeholder="Enter First name" spellcheck="false" data-ms-editor="true">
+                                                                        </td>
+                                                                        <td class="">
+                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
+                                                                        </td>
+                                                                        <td class="">
+                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
+                                                                        </td>
+                                                                        <td>
+                                                                            <select class="form-control selectpicker" data-live-search="true" title="Select Relationship">
                                                                                 <option value="">Father</option>
                                                                                 <option value="">Mother</option>   
                                                                                 <option value="">Sister</option>                                                                
                                                                         </select>
-                                                                    </td>
+                                                                        </td>
+                                                                        <td></td>
 
-                                                                    <td class="text-right cell-change d-flex align-items-center justify-content-end">
-                                                                        <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                                    </tr>
+
+                                                                    <tr class="cloneCharges d-none">
+                                                                        <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                                        <td>
+                                                                            <input type="text " class="form-control " placeholder="Enter First name" spellcheck="false" data-ms-editor="true">
+                                                                        </td>
+                                                                        <td class="">
+                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
+                                                                        </td>
+                                                                        <td class="">
+                                                                            <input type="text " class="form-control " placeholder="Enter middle name" spellcheck="false" data-ms-editor="true">
+                                                                        </td>
+                                                                        <td>
+                                                                            <select class="form-control selectpicker" data-live-search="true" title="Select Relationship">
+                                                                                    <option value="">Father</option>
+                                                                                    <option value="">Mother</option>   
+                                                                                    <option value="">Sister</option>                                                                
+                                                                            </select>
+                                                                        </td>
+
+                                                                        <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                                            <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                                        </td>
+                                                                    </tr>
+
+
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <td colspan="7" class="bg-light add-field-3 cursor-pinter ">
+                                                                            <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add a Kin</span></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+                                                </form>
+                                            </section>
+                                        </div>
+
+
+                                        <!-- Payment Details -->
+                                        <div class="step-cont d-none">
+                                            <h3>Truck(s) Registration</h3>
+                                            <section>
+                                                <form>
+                                                    <div class="row clone-cont">
+                                                        <div class="col-12 clone-me">
+                                                            <div class="row ">
+                                                                <!-- truck registration -->
+                                                                <div class="col-12">
+                                                                    <div class="bg-primary border-2 bg-soft p-3 mb-4">
+                                                                        <p class="fw-semibold mb-0 pb-0">Truck No. 1</p>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="truck-reg-cont p-4">
+                                                                        <div class="row">
+                                                                            <div class="col-12">
+                                                                                <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                                                                    <i class="mdi mdi-truck-delivery-outline font-28 mr-15px"></i>
+                                                                                    <p class="fw-semibold mb-0 pb-0">Truck Details</p>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="basicpill-firstname-input">Plate Number <strong class="text-danger">*</strong></label>
+                                                                                    <input type="text" class="form-control" id="" placeholder="Plate No.">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-6 col-lg-4 col-sm-12">
+                                                                                <div class="mb-4">
+                                                                                    <label for="" class="">Last inspection Date</label>
+                                                                                    <div class="input-group" id="datepicker10">
+                                                                                        <input type="text" class="form-control mouse-pointer" placeholder="Select the previous date of inspection" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker10' data-provide="datepicker" data-date-autoclose="true">
+
+                                                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-6 col-lg-4 col-sm-12">
+                                                                                <div class="mb-4">
+                                                                                    <label for="" class="">Next Inspection Date<strong class="text-danger">*</strong></label>
+                                                                                    <div class="input-group" id="datepicker11">
+                                                                                        <input type="text" class="form-control mouse-pointer" placeholder="Select Next inspection Date" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker11' data-provide="datepicker" data-date-autoclose="true">
+
+                                                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-12">
+                                                                                <div class="bg-warning border-2 mt-4 bg-soft p-2 mb-4 d-flex align-items-center">
+                                                                                    <i class="mdi mdi-clipboard-text-outline font-28 mr-15px"></i>
+                                                                                    <p class="fw-semibold mb-0 pb-0">Documents and attachments</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-3">
+                                                                                <div>
+                                                                                    <label class="form-label">Logbook</label>
+                                                                                    <div class="input-group mb-3 cursor-pinter">
+                                                                                        <label class="input-group-text bg-primary text-white" for="truck-logbook">Select Logbook</label>
+                                                                                        <input type="file" class="form-control" id="truck-logbook">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-3">
+                                                                                <div>
+                                                                                    <label class="form-label">Front view image</label>
+                                                                                    <div class="input-group mb-3 cursor-pinter">
+                                                                                        <label class="input-group-text bg-primary text-white" for="truck-front-img">Select photo</label>
+                                                                                        <input type="file" class="form-control" id="truck-front-img">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-3">
+                                                                                <div>
+                                                                                    <label class="form-label">Rare view image</label>
+                                                                                    <div class="input-group mb-3 cursor-pinter">
+                                                                                        <label class="input-group-text bg-primary text-white" for="truck-rare-img">Select photo</label>
+                                                                                        <input type="file" class="form-control" id="truck-rare-img">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-3">
+                                                                                <div>
+                                                                                    <label class="form-label">Insurance</label>
+                                                                                    <div class="input-group mb-3 cursor-pinter">
+                                                                                        <label class="input-group-text bg-primary text-white" for="truck-rare-img">Upload Insurance</label>
+                                                                                        <input type="file" class="form-control" id="truck-rare-img">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-12">
+                                                                                <div class="bg-warning border-2 bg-soft mt-4 p-2 mb-4 d-flex align-items-center">
+                                                                                    <i class="mdi mdi-steering font-28 mr-15px"></i>
+                                                                                    <p class="fw-semibold mb-0 pb-0">Driver details</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="basicpill-firstname-input">Driver's First Name </label>
+                                                                                    <input type="text" class="form-control" id="" placeholder="Enter first Name">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-lg-4 col-md-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="basicpill-firstname-input">Driver's Second Name </label>
+                                                                                    <input type="text" class="form-control" id="" placeholder="Enter second Name">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="basicpill-firstname-input">Driver's Other Name(s) </label>
+                                                                                    <input type="text" class="form-control" id="" placeholder="Enter driver's Other names">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-lg-4 col-md-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="basicpill-firstname-input">Driver's ID Num</label>
+                                                                                    <input type="text" class="form-control" id="" placeholder="Enter driver's ID No.">
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-lg-4 col-md-6">
+                                                                                <div class="mb-4">
+                                                                                    <label for="basicpill-firstname-input">Driver's License No. </label>
+                                                                                    <input type="text" class="form-control" id="" placeholder="Driver's License No">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 mb-5">
+                                                            <button class="btn btn-outline-secondary waves-effect waves-light w-100" type="submit "><i class="bx bx-plus me-1"></i> Add Another Truck</button>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </section>
+                                        </div>
+
+
+                                        <!-- Confirm Details -->
+                                        <div class="step-cont d-none">
+                                            <h3>Payments And confirmation</h3>
+                                            <section>
+                                                <form>
+                                                    <div class="col-12">
+                                                        <div class="bg-primary border-2 bg-soft p-3 mb-4">
+                                                            <p class="fw-semibold mb-0 pb-0">Invoice Breakdown</p>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <table class="table table-nowrap">
+                                                            <thead class="table-dark">
+                                                                <tr>
+                                                                    <th>#</th>
+                                                                    <th style="width: 70px;">truck</th>
+                                                                    <th class="text-end">Permit Charges</th>
+                                                                    <th class="text-end">Duration</th>
+                                                                    <th class="text-end">Office Maintenance Fee</th>
+                                                                    <th class="text-end">Maintenance Fee period</th>
+                                                                    <th class="text-end">Totals</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1.</td>
+                                                                    <td class="text-uppercase">KAB 123P</td>
+                                                                    <td class="text-end">KES 6,000</td>
+                                                                    <td class="text-end">6 Months</td>
+                                                                    <td class="text-end">KES 6,000</td>
+                                                                    <td class="text-end">6 Months</td>
+                                                                    <td class="text-end">KES 12,000</td>
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>2.</td>
+                                                                    <td class="text-uppercase">KBB 265Y</td>
+                                                                    <td class="text-end">KES 6,000</td>
+                                                                    <td class="text-end">6 Months</td>
+                                                                    <td class="text-end">KES 6,000</td>
+                                                                    <td class="text-end">6 Months</td>
+                                                                    <td class="text-end">KES 12,000</td>
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>3.</td>
+                                                                    <td class="text-uppercase">KCA 567T</td>
+                                                                    <td class="text-end">KES 6,000</td>
+                                                                    <td class="text-end">6 Months</td>
+                                                                    <td class="text-end">KES 6,000</td>
+                                                                    <td class="text-end">6 Months</td>
+                                                                    <td class="text-end">KES 12,000</td>
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td colspan="2"><strong>Total</strong></td>
+                                                                    <td class="text-end fw-bold">KES 18,000</td>
+                                                                    <td></td>
+                                                                    <td class="text-end fw-bold">KES 18,000</td>
+                                                                    <td></td>
+                                                                    <td class="text-end fw-bold text-uppercase fw-bold">
+                                                                        <h5>KES 36,000</h5>
                                                                     </td>
                                                                 </tr>
 
 
                                                             </tbody>
-                                                            <tfoot>
-                                                                <tr>
-                                                                    <td colspan="7" class="bg-light add-field-3 cursor-pinter ">
-                                                                        <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add a Kin</span></span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tfoot>
                                                         </table>
                                                     </div>
-                                                </div>
-
-
-
-
-
-                                            </form>
-                                        </section>
-
-
-                                        <!-- Payment Details -->
-                                        <h3>Truck(s) Registration</h3>
-                                        <section>
-                                            <form>
-                                                <div class="row clone-cont">
-                                                    <div class="col-12 clone-me">
-                                                        <div class="row ">
-                                                            <!-- truck registration -->
-                                                            <div class="col-12">
-                                                                <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                                    <p class="fw-semibold mb-0 pb-0">Truck No. 1</p>
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="truck-reg-cont p-4">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
-                                                                                <i class="mdi mdi-truck-delivery-outline font-28 mr-15px"></i>
-                                                                                <p class="fw-semibold mb-0 pb-0">Truck Details</p>
-
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-4 col-md-6">
-                                                                            <div class="mb-4">
-                                                                                <label for="basicpill-firstname-input">Plate Number <strong class="text-danger">*</strong></label>
-                                                                                <input type="text" class="form-control" id="" placeholder="Plate No.">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-6 col-lg-4 col-sm-12">
-                                                                            <div class="mb-4">
-                                                                                <label for="" class="">Last inspection Date</label>
-                                                                                <div class="input-group" id="datepicker10">
-                                                                                    <input type="text" class="form-control mouse-pointer" placeholder="Select the previous date of inspection" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker10' data-provide="datepicker" data-date-autoclose="true">
-
-                                                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-md-6 col-lg-4 col-sm-12">
-                                                                            <div class="mb-4">
-                                                                                <label for="" class="">Next Inspection Date<strong class="text-danger">*</strong></label>
-                                                                                <div class="input-group" id="datepicker11">
-                                                                                    <input type="text" class="form-control mouse-pointer" placeholder="Select Next inspection Date" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker11' data-provide="datepicker" data-date-autoclose="true">
-
-                                                                                    <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12">
-                                                                            <div class="bg-warning border-2 mt-4 bg-soft p-2 mb-4 d-flex align-items-center">
-                                                                                <i class="mdi mdi-clipboard-text-outline font-28 mr-15px"></i>
-                                                                                <p class="fw-semibold mb-0 pb-0">Documents and attachments</p>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-sm-3">
-                                                                            <div>
-                                                                                <label class="form-label">Logbook</label>
-                                                                                <div class="input-group mb-3 cursor-pinter">
-                                                                                    <label class="input-group-text bg-primary text-white" for="truck-logbook">Select Logbook</label>
-                                                                                    <input type="file" class="form-control" id="truck-logbook">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-sm-3">
-                                                                            <div>
-                                                                                <label class="form-label">Front view image</label>
-                                                                                <div class="input-group mb-3 cursor-pinter">
-                                                                                    <label class="input-group-text bg-primary text-white" for="truck-front-img">Select photo</label>
-                                                                                    <input type="file" class="form-control" id="truck-front-img">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-sm-3">
-                                                                            <div>
-                                                                                <label class="form-label">Rare view image</label>
-                                                                                <div class="input-group mb-3 cursor-pinter">
-                                                                                    <label class="input-group-text bg-primary text-white" for="truck-rare-img">Select photo</label>
-                                                                                    <input type="file" class="form-control" id="truck-rare-img">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-sm-3">
-                                                                            <div>
-                                                                                <label class="form-label">Insurance</label>
-                                                                                <div class="input-group mb-3 cursor-pinter">
-                                                                                    <label class="input-group-text bg-primary text-white" for="truck-rare-img">Upload Insurance</label>
-                                                                                    <input type="file" class="form-control" id="truck-rare-img">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-12">
-                                                                            <div class="bg-warning border-2 bg-soft mt-4 p-2 mb-4 d-flex align-items-center">
-                                                                                <i class="mdi mdi-steering font-28 mr-15px"></i>
-                                                                                <p class="fw-semibold mb-0 pb-0">Driver details</p>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-4 col-md-6">
-                                                                            <div class="mb-4">
-                                                                                <label for="basicpill-firstname-input">Driver's First Name </label>
-                                                                                <input type="text" class="form-control" id="" placeholder="Enter first Name">
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-lg-4 col-md-6">
-                                                                            <div class="mb-4">
-                                                                                <label for="basicpill-firstname-input">Driver's Second Name </label>
-                                                                                <input type="text" class="form-control" id="" placeholder="Enter second Name">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-lg-4 col-md-6">
-                                                                            <div class="mb-4">
-                                                                                <label for="basicpill-firstname-input">Driver's Other Name(s) </label>
-                                                                                <input type="text" class="form-control" id="" placeholder="Enter driver's Other names">
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-lg-4 col-md-6">
-                                                                            <div class="mb-4">
-                                                                                <label for="basicpill-firstname-input">Driver's ID Num</label>
-                                                                                <input type="text" class="form-control" id="" placeholder="Enter driver's ID No.">
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="col-lg-4 col-md-6">
-                                                                            <div class="mb-4">
-                                                                                <label for="basicpill-firstname-input">Driver's License No. </label>
-                                                                                <input type="text" class="form-control" id="" placeholder="Driver's License No">
-                                                                            </div>
-                                                                        </div>
-
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 mb-5">
-                                                        <button class="btn btn-outline-secondary waves-effect waves-light w-100" type="submit "><i class="bx bx-plus me-1"></i> Add Another Truck</button>
-                                                    </div>
-                                                </div>
-
-                                            </form>
-                                        </section>
-
-
-                                        <!-- Confirm Details -->
-                                        <h3>Payments And confirmation</h3>
-                                        <section>
-                                            <form>
-                                                <div class="col-12">
-                                                    <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                        <p class="fw-semibold mb-0 pb-0">Invoice Breakdown</p>
-
-                                                    </div>
-                                                </div>
-                                                <div class="table-responsive">
-                                                    <table class="table table-nowrap">
-                                                        <thead class="table-dark">
-                                                            <tr>
-                                                                <th>#</th>
-                                                                <th style="width: 70px;">truck</th>
-                                                                <th class="text-end">Permit Charges</th>
-                                                                <th class="text-end">Duration</th>
-                                                                <th class="text-end">Office Maintenance Fee</th>
-                                                                <th class="text-end">Maintenance Fee period</th>
-                                                                <th class="text-end">Totals</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1.</td>
-                                                                <td class="text-uppercase">KAB 123P</td>
-                                                                <td class="text-end">KES 6,000</td>
-                                                                <td class="text-end">6 Months</td>
-                                                                <td class="text-end">KES 6,000</td>
-                                                                <td class="text-end">6 Months</td>
-                                                                <td class="text-end">KES 12,000</td>
-
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>2.</td>
-                                                                <td class="text-uppercase">KBB 265Y</td>
-                                                                <td class="text-end">KES 6,000</td>
-                                                                <td class="text-end">6 Months</td>
-                                                                <td class="text-end">KES 6,000</td>
-                                                                <td class="text-end">6 Months</td>
-                                                                <td class="text-end">KES 12,000</td>
-
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>3.</td>
-                                                                <td class="text-uppercase">KCA 567T</td>
-                                                                <td class="text-end">KES 6,000</td>
-                                                                <td class="text-end">6 Months</td>
-                                                                <td class="text-end">KES 6,000</td>
-                                                                <td class="text-end">6 Months</td>
-                                                                <td class="text-end">KES 12,000</td>
-
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td colspan="2"><strong>Total</strong></td>
-                                                                <td class="text-end fw-bold">KES 18,000</td>
-                                                                <td></td>
-                                                                <td class="text-end fw-bold">KES 18,000</td>
-                                                                <td></td>
-                                                                <td class="text-end fw-bold text-uppercase fw-bold">
-                                                                    <h5>KES 36,000</h5>
-                                                                </td>
-                                                            </tr>
-
-
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="bg-primary border-2 bg-soft p-3 mb-4">
-                                                        <p class="fw-semibold mb-0 pb-0">Payment Options</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-
-                                                    <div class="col-lg-4 col-md-6">
-                                                        <div class="mb-4">
-                                                            <label for="basicpill-lastname-input">Payment Option<strong class="text-danger">*</strong></label>
-                                                            <select class="form-control selectpicker payment-options" data-live-search="true" title="Select payment option">
-                                                                    <option value="MPESA" data-content="<span class='badge pill bg-success fs-6'>MPESA</span>">MPESA</option>
-                                                                    <option value="CASH" data-content="<span class='badge pill bg-primary fs-6'>CASH</span>">CASH</option> 
-                                                                    <option value="Print Invoice" data-content="<span class='badge pill bg-warning fs-6'>CASH</span>">PRINT INVOICE</option>                                                              
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6 mpesa-phone d-none">
-                                                        <div class="mb-4">
-                                                            <label for="basicpill-firstname-input">Phone. <strong class="text-danger">*</strong></label>
-                                                            <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Enter Phone No.">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6">
-                                                        <div class="mb-4">
-                                                            <label for="basicpill-firstname-input">Amount<strong class="text-danger">*</strong></label>
-                                                            <input value="36000" readonly type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Amount to be Paid">
-                                                        </div>
-                                                    </div>
                                                     <div class="col-12">
-                                                        <div class="row">
-                                                            <div class="col-4 d-none cash-alert">
-                                                                <div class="alert alert-secondary" role="alert">
-                                                                    By selecting this option it means you confirmed that you have received <strong>KES 36,000</strong> and a receipt will be produced for the same.
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-4 d-none mpesa-alert">
-                                                                <div class="alert alert-success" role="alert">
-                                                                    By selecting this option a payment request for <strong>KES 36,000</strong> Will be sent to the customer and a receipt will be produced once the payment has been successfully done.
-                                                                </div>
-                                                            </div>
+                                                        <div class="bg-primary border-2 bg-soft p-3 mb-4">
+                                                            <p class="fw-semibold mb-0 pb-0">Payment Options</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
 
-                                                            <div class="col-4 d-none invoice-alert">
-                                                                <div class="alert alert-warning" role="alert">
-                                                                    An invoice for <strong>KES 36,000</strong> will be created and the client is free to make the payment on later date through <strong class="fw-semibold">Mpesa,Bank or cash.</strong>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-lastname-input">Payment Option<strong class="text-danger">*</strong></label>
+                                                                <select class="form-control selectpicker payment-options" data-live-search="true" title="Select payment option">
+                                                                        <option value="MPESA" data-content="<span class='badge pill bg-success fs-6'>MPESA</span>">MPESA</option>
+                                                                        <option value="CASH" data-content="<span class='badge pill bg-primary fs-6'>CASH</span>">CASH</option> 
+                                                                        <option value="Print Invoice" data-content="<span class='badge pill bg-warning fs-6'>CASH</span>">PRINT INVOICE</option>                                                              
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6 mpesa-phone d-none">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Phone. <strong class="text-danger">*</strong></label>
+                                                                <input type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Enter Phone No.">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-6">
+                                                            <div class="mb-4">
+                                                                <label for="basicpill-firstname-input">Amount<strong class="text-danger">*</strong></label>
+                                                                <input value="36000" readonly type="text" class="form-control" id="Enter tenants Phone Number" placeholder="Amount to be Paid">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="row">
+                                                                <div class="col-4 d-none cash-alert">
+                                                                    <div class="alert alert-secondary" role="alert">
+                                                                        By selecting this option it means you confirmed that you have received <strong>KES 36,000</strong> and a receipt will be produced for the same.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-4 d-none mpesa-alert">
+                                                                    <div class="alert alert-success" role="alert">
+                                                                        By selecting this option a payment request for <strong>KES 36,000</strong> Will be sent to the customer and a receipt will be produced once the payment has been successfully done.
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-4 d-none invoice-alert">
+                                                                    <div class="alert alert-warning" role="alert">
+                                                                        An invoice for <strong>KES 36,000</strong> will be created and the client is free to make the payment on later date through <strong class="fw-semibold">Mpesa,Bank or cash.</strong>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
 
 
-                                            </form>
-                                        </section>
+                                                </form>
+                                            </section>
+                                        </div>
+
+                                        <div class="button-navigators">
+                                            
+                                            <button disabled class="btn btn-primary waves-effect kev-prev me-3"><i class="mdi-arrow-left mdi font-16px ms-2 me-2"></i> Previous </button>
+                                            <button class="btn btn-primary waves-effect kev-nxt me-3">Next <i class="mdi mdi-arrow-right font-16px ms-2 me-2"></i></button>
+                                            <button type='button' class="btn btn-success kev-submit me-3 d-none" onClick={submit}>Submit <i class="mdi mdi-check-all me-2 font-16px"></i></button>
+                                          </div>
                                     </div>
 
                                 </div>
@@ -1078,11 +1122,9 @@
     <!-- numerals number formater -->
     <script src="assets/libs/numeral/numeral.js "></script>
     <!-- jquery step -->
-    <script src="assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
-    <!-- Plugins js -->
+    
     <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
-    <!-- form wizard init -->
-    <script src="assets/js/pages/form-wizard.init.js "></script>
+    
 
 
     <!-- App js -->
@@ -1092,7 +1134,5 @@
 
 
 <!-- index.html   13:55:49 GMT -->
-
-</html>dex.html 13:55:49 GMT -->
 
 </html>
